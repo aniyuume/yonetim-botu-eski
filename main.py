@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord.ui import View, Button, Modal, TextInput
 import json
 import time
+import os
 
 def json_yükle(dosya) -> dict:
     with open(dosya, "r", encoding="utf-8") as d:
@@ -300,4 +301,4 @@ async def oto_mesaj(interaction: discord.Interaction):
         ephemeral=False
     )
 
-bot.run(config["token"])
+bot.run(os.getenv("TOKEN")
