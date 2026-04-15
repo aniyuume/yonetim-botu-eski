@@ -152,4 +152,4 @@ Kaynak kodları: {config["github_linki"]}
         ).set_footer(text=bot.user.name)
     )
 
-bot.run(os.getenv("TOKEN")
+bot.run(os.getenv("TOKEN"))
