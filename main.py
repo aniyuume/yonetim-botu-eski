@@ -50,7 +50,7 @@ async def on_member_join(member : discord.Member):
             ).set_thumbnail(
                 url=avatar
             ).set_image(
-                url=banner
+                url="https://cdn.discordapp.com/attachments/1421560795732381778/1494054936672079893/image-19.jpg?ex=69e13697&is=69dfe517&hm=92b7ee2673c69fedef305a04df2221e2f0eba1e06795400e55f477e9e2f53694&"
             )
         )
 
@@ -70,7 +70,7 @@ async def on_member_remove(member : discord.Member):
             ).set_thumbnail(
                 url=avatar
             ).set_image(
-                url=banner
+                url="https://cdn.discordapp.com/attachments/1421560795732381778/1494054936672079893/image-19.jpg?ex=69e13697&is=69dfe517&hm=92b7ee2673c69fedef305a04df2221e2f0eba1e06795400e55f477e9e2f53694&"
             )
         )
 
