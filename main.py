@@ -106,7 +106,7 @@ async def kanala_katıl(ctx : commands.Context, channel : discord.VoiceChannel =
     if channel:
         if ctx.guild:
             if channel.permissions_for(ctx.author).manage_channels:
-                await channel.connect(timeout=99999999999999999)
+                vc = await channel.connect(self_deaf=True, self_mute=True)
                 embed = discord.Embed(
                     title="KANALA KATILINDI",
                     description=f"Bot {channel.name} kanalına katıldı.",
